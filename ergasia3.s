@@ -307,6 +307,7 @@ main:
 
             sw $t6, ($a3)     # Store position in SparseC
             addi $a3, $a3, 4  # Increment SparseC pointer
+
             add $t7, $t7, $t9  # Sum values
             sw $t7, ($a3)     # Store value in SparseC
 
@@ -335,7 +336,9 @@ main:
         add_sparse_a_less_than_b:
             sw $t6, ($a3)     # Store position in SparseC
             addi $a3, $a3, 4  # Increment SparseC pointer
+            
             sw $t7, ($a3)     # Store value in SparseC
+
             addi $a3, $a3, 4  # Increment SparseC pointer
             addi $a1, $a1, 8  # Increment SparseA pointer
 
